@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificación de Cuenta - Sistema de Biblioteca</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .info {
+            color: #155724;
+            background-color: #d4edda;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+        .error {
+            color: #721c24;
+            background-color: #f8d7da;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Verificación de Cuenta</h1>
+
+    <div class="container">
+        <!-- Mensaje de éxito -->
+        <div class="info">
+            Hemos enviado un código de verificación a tu correo electrónico. Ingresa el código para verificar tu cuenta.
+        </div>
+
+        <!-- Mensaje de error -->
+        <div class="error">
+            El código de verificación ingresado es incorrecto. Por favor, inténtalo nuevamente.
+        </div>
+
+        <form>
+            <div class="form-group">
+                <label for="codigo">Código de Verificación</label>
+                <input type="text" id="codigo" name="codigo" required placeholder="Ingresa el código">
+            </div>
+
+            <button type="submit">Verificar Cuenta</button>
+        </form>
+
+        <p>¿No has recibido el código? <a href="#">Reenviar código</a></p>
+    </div>
+
+</body>
+</html>
